@@ -621,6 +621,8 @@
 </div>
 <script>
     const showButton = document.querySelector('.show-button');
+    const body = document.querySelector('body');
+    const colorSwitch = document.querySelector('.color-switch');
     showButton.addEventListener('click' , (e)=>{
         let parent;
        
@@ -637,6 +639,17 @@
         }
        
     })
+    body.addEventListener('click' ,  (e) => {
+       
+        if(e.target != showButton && colorSwitch.classList.contains('active')){
+        colorSwitch.classList.remove('active');
+        
+    }
+},true) 
+ //hena ba5odha fe el capturing phase 3a4an m4l4 we a7ot fe nafs el w2t fa 
+ // checking el body bey7sal abl el hamburger 3a4an el hamburger goz2 mn el body 
+ 
+
 </script>
 </body>
 </html>
