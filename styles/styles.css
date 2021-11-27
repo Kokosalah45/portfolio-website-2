@@ -736,6 +736,7 @@ h3:first-child{
     width : 210px;
     gap : 1.5em;
     transition : right .3s ease-in-out;
+    z-index: 99;
 
 
 }
